@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+
+/*========== TITULO ==========*/
+
+title i {
+    color: #dc3545;
+}
+
+
+/*========== DARKMODE ==========*/
+
+.darkmode--activated .container ul li i {
+    color: #fff !important;
+    box-shadow: 0px 5px 16px -8px rgba(0, 0, 0, 0.6) !important;
+}
+
+.darkmode--activated h1 {
+    isolation: isolate;
+    color: #fff;
+}
+
+.darkmode--activated .container .typing {
+    color: rgb(255, 255, 255, 0.5) !important;
+    isolation: isolate;
+}
+
+.darkmode--activated .container .btn:active {
+    box-shadow: -1px 4px 5px 2px rgba(255, 255 255, 0.75);
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(255, 255 255, 0.75);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(255, 255 255, 0.75);
+}
+
+.darkmode-layer--expanded {
+    background-color: #f5dcbf !important;
+}
+
+.darkmode--activated .btn {
+    text-shadow: 0 0 30px #fff !important;
+}
+
+.darkmode--activated .container .door.active {
+    color: #fff !important;
+}
+
+.darkmode--activated .container .door.active:hover {
+    color: #249d14 !important;
+}
+
+
+/*========== Style Modal Click ==========*/
+
+#modalClick .modal-container {
+    max-width: 300px;
+    max-height: 45%;
+    padding: 2rem 3rem;
+}
+
+.modal-button .botonclick {
+    display: inline-block;
+    max-width: 100%;
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px transparent;
+    transition: all 0.2s;
+}
+
+.modal-button .botonclick:hover {
+    color: #bd313f;
+}
+
+
+/*========== Style Modal Exit ==========*/
+
+
+/* Boton door style */
+
+.container .door {
+    display: none;
+    font-size: 50px;
+    margin: 0 auto;
+    transition: all 0.2s;
+}
+
+.container .door i {
+    cursor: pointer;
+}
+
+.container i:hover {
+    content: "\f52b";
+    color: #249d14;
+}
+
+.container .door.active {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    animation: desliceDown 0.5s linear;
+}
+
+
+/* animacion Boton door style */
+
+@keyframes desliceDown {
+    0% {
+        top: -10px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+
+/* Container Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s 0.6s;
+    --transform: translateY(-100vh);
+    --transition: transform 0.6s;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.5s;
+    --transform: translateY(0);
+    -o-transition: transform 0.7s 0.7s;
+}
+
+.modal-container {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal-title {
+    font-size: 3rem;
+    line-height: 0.5 !important;
+}
+
+.modal-paragraph {
+    font-size: 1.3rem;
+    margin: 24px auto 0;
+}
+
+.modal-icons {
+    display: flex;
+}
+
+.fa-person-running:before,
+.fa-running:before {
+    margin: -20px;
+}
+
+.modal-icons i {
+    font-size: 70px;
+}
+
+.modal-buttons {
+    text-align: center;
+}
+
+.modal-buttons a {
+    max-width: 90%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #dc3545;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+    border: 1.5px solid;
+    border-radius: 16px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.modal-buttons a:hover {
+    color: #dc3545;
+    background: #fff;
+}
+
+
+/*========== Animacion FadeIn de titulo ==========*/
+
+#titulo {
+    transition: 0.2s ease;
+}
+
+
+/*========== Boton principal ==========*/
+
+.container .btn {
+    isolation: isolate;
+    border-radius: 2rem;
+    box-shadow: -1px 4px 5px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+}
+
+.container .btn:focus {
+    outline: none;
+    box-shadow: -1px 4px 5px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.container .btn:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: #bd313f;
+    border-color: #bd313f;
+}
+
+.container .btn:active {
+    outline: none;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+
+/*========== Botones Secundarios ==========*/
+
+.btnmas {
+    width: 500px;
+    height: 500px;
+    font-size: 60px !important;
+}
+
+.container .btx {
+    display: none;
+}
+
+.container .btx1 {
+    display: none;
+}
+
+.container .btx2 {
+    display: none;
+}
+
+.container .btnazul {
+    position: absolute;
+    background: blue;
+    border-color: blue;
+    display: none;
+    transition: all 0.2s;
+}
+
+.container .btnverde {
+    background: green;
+    border-color: green;
+    display: none;
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.container .btnazul:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: blue;
+    border-color: blue;
+}
+
+.container .btnazul:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: blue;
+    border-color: blue;
+}
+
+.container .btnazul:active {
+    outline: none;
+    box-shadow: none;
+    background-color: blue;
+    border-color: blue;
+}
+
+.container .btnverde:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: green;
+    border-color: green;
+}
+
+.container .btnverde:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: green;
+    border-color: green;
+}
+
+.container .btnverde:active {
+    outline: none;
+    box-shadow: none;
+    background-color: green;
+    border-color: green;
+}
+
+
+/*==========Cambio de boton por imagen ==========*/
+
+.btnimg {
+    background-image: url(/BotonRojo/Assets/images/cerdo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    color: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.btnimg2 {
+    background-image: url(/BotonRojo/Assets/images/lapida.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    color: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+
+/*========== Animacion de boton ==========*/
+
+.btnanim {
+    margin-top: 0%;
+    animation: slide-slow 1s infinite;
+}
+
+
+/* Animacion de derecha a izquierda */
+
+@keyframes slide-slow {
+    0% {
+        margin-right: 40%;
+    }
+    50% {
+        margin-left: 40%;
+    }
+    100% {
+        margin-right: 40%;
+    }
+}
+
+.btnanim2 {
+    margin-top: 60px;
+    animation: girar 1.5s linear infinite;
+}
+
+
+/* Animacion de giro */
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg) translate(-100px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translate(-100px) rotate(-360deg);
+    }
+}
+
+
+/* Animacion Shake */
+
+.btnshake {
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    animation: shake 2s ease-out infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+        top: -40px;
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+        top: -20px;
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+        top: -40px;
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+        top: -15px;
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+        top: -40px;
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+        top: -10px;
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+        top: -40px;
+    }
+}
+
+
+/*========== Footer / Redes Sociales ==========*/
+
+.container ul li i.linkedin:hover {
+    color: #0e76a8 !important;
+}
+
+.container ul li i.github:hover {
+    color: #171515 !important;
+}
+
+
+/*==========Typing ==========*/
+
+.typing {
+    font-size: 3rem;
+    color: rgb(0, 0, 0, 0.2);
+    display: none;
+}
