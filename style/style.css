@@ -334,7 +334,7 @@ title i {
 /*==========Cambio de boton por imagen ==========*/
 
 .btnimg {
-    background-image: url(/Assets/images/cerdo.png);
+    background-image: url("/Assets/images/cerdo.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100px;
@@ -347,7 +347,7 @@ title i {
 }
 
 .btnimg2 {
-    background-image: url(/Assets/images/lapida.png);
+    background-image: url("/Assets/images/lapida.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 150px;
