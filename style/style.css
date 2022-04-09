@@ -455,12 +455,12 @@ title i {
 
 /*========== Footer / Redes Sociales ==========*/
 
-.container ul li i.linkedin:hover {
-    color: #0e76a8 !important;
+footer i {
+    transition: all 0.5s;
 }
 
-.container ul li i.github:hover {
-    color: #171515 !important;
+footer i:hover {
+    color: #dc3545;
 }
 
 
