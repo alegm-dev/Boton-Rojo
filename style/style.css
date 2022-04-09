@@ -334,11 +334,7 @@ title i {
 /*==========Cambio de boton por imagen ==========*/
 
 .btnimg {
-<<<<<<< HEAD
     background-image: url("../Assets/images/cerdo.png");
-=======
-    background-image: url("/Assets/images/cerdo.png");
->>>>>>> 385493884b4179d15cbc236bd5d56b81ae04b53b
     background-repeat: no-repeat;
     background-size: cover;
     height: 100px;
@@ -351,11 +347,7 @@ title i {
 }
 
 .btnimg2 {
-<<<<<<< HEAD
     background-image: url("../Assets/images/lapida.png");
-=======
-    background-image: url("/Assets/images/lapida.png");
->>>>>>> 385493884b4179d15cbc236bd5d56b81ae04b53b
     background-repeat: no-repeat;
     background-size: cover;
     height: 150px;
