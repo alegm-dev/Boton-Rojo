@@ -1,4 +1,5 @@
 // VARIABLES
+const preload = document.getElementById('preload');
 let titulo = document.getElementById("titulo");
 let boton = document.getElementById("boton");
 let botonVerde = document.getElementById("verde");
@@ -12,6 +13,12 @@ let btx1 = document.querySelectorAll('.btx1');
 let btx2 = document.querySelectorAll('.btx2');
 let btxall = [...btx, ...btx1, ...btx2];
 let iconsDoor = document.getElementById('door');
+
+//Preloader
+window.onload = () => {
+    preload.style.display = 'none';
+    preload.style.transition = '0.5s';
+}
 
 
 //FRACES
